@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #000000, #000000b4);
+    background: linear-gradient(135deg, #0f0f0f, #2c2c2c); /* degradê ajustado */
     color: white;
     text-align: center;
 }
@@ -50,7 +50,6 @@ nav ul {
     }
 }
 
-
 #portfolio {
     display: flex;
     flex-direction: column;
@@ -80,12 +79,13 @@ nav ul {
     transform: translateY(0);
     opacity: 1;
 }
+
 a {
     text-decoration: none;
-    color: #9ee8ff; /* Cor personalizada (ex: vermelho) */
-  }
-  
-  a:hover, a:visited, a:active {
+    color: #9ee8ff; /* Cor personalizada */
+}
+
+a:hover, a:visited, a:active {
     text-decoration: none;
     color: #9ee8ff; /* Mantém a mesma cor em todos os estados */
-  }
+}
