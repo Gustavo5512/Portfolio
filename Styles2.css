@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #000000b4);
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Mantém os links do menu alinhados à direita */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center; /* No mobile, centraliza os links */
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Mantém os links na horizontal */
+        gap: 15px; /* Espaço entre os links */
+    }
+}
+
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+}
+
+.portfolio-item.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+    color: #9ee8ff; /* Cor personalizada (ex: vermelho) */
+  }
+  
+  a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #9ee8ff; /* Mantém a mesma cor em todos os estados */
+  }
